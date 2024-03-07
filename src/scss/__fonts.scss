@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Garamond';
+    src: url('/Portfolio_Nastia/public/fonts/EBGaramond-Italic.woff') format('woff'),
+        url('/Portfolio_Nastia/public/fonts/EBGaramond-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Garamond';
+    src: url('/Portfolio_Nastia/public/fonts/EBGaramond-Regular.woff') format('woff'),
+        url('/Portfolio_Nastia/public/fonts/EBGaramond-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
