@@ -6,6 +6,10 @@
 
 @import '__header.scss';
 
+@import '__main.scss';
+
+@import '__section__header.scss';
+
 
 
 *,
@@ -29,7 +33,7 @@ img {
     max-width: 100%;
 }
 
-.container {
+.wrapper {
     max-width: 1420px;
     padding: 0 10px;
     margin: 0 auto;

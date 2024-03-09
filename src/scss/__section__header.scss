@@ -1,0 +1,25 @@
+.section {
+
+    &__header {
+    }
+}
+.wrapper {
+}
+.header {
+
+    &__container {
+    }
+
+    &__title {
+        font-family: 'Ojuju';
+        font-weight: 600;
+    }
+
+    &__subtitle {
+        font-family: 'Ojuju';
+        font-weight: 500;
+        color: $firstLetter-color ;
+    }
+}
+
+
