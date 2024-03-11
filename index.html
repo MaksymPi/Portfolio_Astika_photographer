@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/x-icon" href="public/favicon/camera_icon.png">
+  <link rel="icon" type="image/x-icon" href="/Portfolio_Nastia/public/favicon/camera_icon.png">
   <title>Astika_photographer</title>
 </head>
 
 <body>
-  <header class="header ">
+  <header class="header" id="header">
     <div class="wrapper">
       <nav class="navbar">
         <div class="tittle__logo">
@@ -27,16 +27,16 @@
         </div>
         <ul class="menu__items">
           <li class="menu__item">
-            <a class="menu__link" href="#">Home</a>
+            <a class="menu__link" href="#header">Home</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link " href="#">Lovestory</a>
+            <a class="menu__link" href="#lovestory">Lovestory</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Family</a>
+            <a class="menu__link" href="#family">Family</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Individual</a>
+            <a class="menu__link" href="#indvidyal">Individual</a>
           </li>
         </ul>
       </nav>
@@ -52,16 +52,47 @@
         </div>
       </div>
     </section>
-
-
-    <section class="section__lovestory">
+    <section class="section__lovestory " id="lovestory">
       <div class="wrapper">
-        <div class="entry__container">
-          <div class="entry-header">Lovestory</div>
-          <div class="entry-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, et?</div>
+        <div class="box">
+          <div class="entry__container">
+            <h2 class="entry__header">Lovestory</h2>
+            <p class="entry__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, et?</p>
+            <a class="entry__examples" href="#">Examples of work</a>
+          </div>
+          <div class="entry__img">
+            <img  src="/images/love.jpg" alt="">
+          </div>
         </div>
       </div>
-
+    </section>
+    <section class="section__family" id="family">
+      <div class="wrapper">
+        <div class="box">
+          <div class="entry__img">
+            <img  src="/images/family.jpg" alt="">
+          </div>
+          <div class="entry__container">
+            <h2 class="entry__header">Family</h2>
+            <p class="entry__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, et?</p>
+            <a class="entry__examples" href="#">Examples of work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section__indvidyal" id="indvidyal">
+      <div class="wrapper">
+        <div class="box">
+          <div class="entry__container">
+            <h2 class="entry__header">Indvidyal</h2>
+            <p class="entry__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, et?</p>
+            <a class="entry__examples" href="#">Examples of work</a>
+          </div>
+          <div class="entry__img">
+            <img  src="/images/solo_1.jpg" alt="">
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer class="footer "></footer>

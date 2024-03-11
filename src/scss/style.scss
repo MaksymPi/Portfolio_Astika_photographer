@@ -10,6 +10,7 @@
 
 @import '__section__header.scss';
 
+@import '__section__loveStory.scss';
 
 
 *,
@@ -37,6 +38,8 @@ img {
     max-width: 1420px;
     padding: 0 10px;
     margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 body {

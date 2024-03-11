@@ -1,0 +1,38 @@
+.section {
+
+	&__lovestory {
+	}
+}
+.wrapper {
+}
+.box {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+.entry {
+
+	&__container {
+	}
+
+	&__header {
+	}
+
+	&__summary {
+	}
+
+	&__examples {
+		color: $firstLetter-color;
+	}
+
+	&__img {
+		width: 100%;
+		height: 50vh;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:  cover;
+	}
+}
+
+
+
