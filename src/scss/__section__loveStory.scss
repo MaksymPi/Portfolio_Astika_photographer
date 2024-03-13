@@ -9,19 +9,26 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
+	text-align: left;
 }
 .entry {
 
 	&__container {
+		margin: 0 30px;
 	}
 
 	&__header {
+		font-size: 32px;
 	}
 
 	&__summary {
+		width: 450px;
+		color: $color-primary-opacity;
+		line-height: 30px;
 	}
 
 	&__examples {
+		font-weight: 600;
 		color: $firstLetter-color;
 	}
 

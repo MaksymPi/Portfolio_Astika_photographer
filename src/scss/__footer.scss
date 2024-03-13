@@ -1,5 +1,11 @@
+.link-footer {
+      color: $color-primary-opacity;
+      font-size: 22px;
+      font-weight: 400;
+      text-transform:initial;
+}
+
 .footer {
-    margin-top: 80px;
     padding: 20px 20px;
     display: flex;
     flex-direction: row;
@@ -36,10 +42,7 @@
 		}
 
 		&__link {
-            color: $color-primary-opacity;
-            font-size: 22px;
-            font-weight: 400;
-            text-transform:initial;
+
 		}
 }
 .info {
