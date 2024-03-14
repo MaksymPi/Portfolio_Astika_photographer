@@ -22,7 +22,7 @@
 	}
 
 	&__summary {
-		width: 450px;
+		max-width: 450px;
 		color: $color-primary-opacity;
 		line-height: 30px;
 	}
@@ -30,11 +30,15 @@
 	&__examples {
 		font-weight: 600;
 		color: $firstLetter-color;
+		background-color: transparent;
+		border-radius: 20px;
+		border: none;
+		cursor: pointer;
 	}
 
 	&__img {
 		width: 100%;
-		height: 700px;
+		max-height: 700px;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size:  cover;

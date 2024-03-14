@@ -61,7 +61,7 @@
             <h2 class="entry__header">Lovestory</h2>
             <p class="entry__summary">
               Looking through these photographs, you will be immersed in the atmosphere of tenderness and trust that accompanies every step of two lovers.</p>
-            <a class="entry__examples" href="#">More</a>
+              <button class="entry__examples" id="love-open-modal-btn">More</button>
           </div>
           <div class="entry__img">
             <img src="/images/love.jpg" alt="">
@@ -79,7 +79,7 @@
             <h2 class="entry__header">Family</h2>
             <p class="entry__summary">
               As you immerse yourself in this section, you will immerse yourself in an atmosphere of warmth and mutual understanding that forms strong bonds among family members.</p>
-            <a class="entry__examples" href="#">More</a>
+              <button class="entry__examples" id="open-modal-btn">More</button>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@
             <h2 class="entry__header">Indvidyal</h2>
             <p class="entry__summary">
               Here, each image is a story expressed through emotions and facial expressions, inviting the viewer to look into the soul of each person.</p>
-            <a class="entry__examples" href="#">More</a>
+              <button class="entry__examples" id="open-modal-btn">More</button>
           </div>
           <div class="entry__img">
             <img src="/images/solo_1.jpg" alt="">
@@ -136,7 +136,70 @@
       </div>
     </div>
   </footer>
+
+
+
+  <div class="modal__love" id="love-modal">
+    <button class="modal__close-btn" id="close-modal-btn">
+      <svg width="25" height="25" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#999"></path>
+    </svg>
+    </button>
+    <div class="modal__box">
+      <h2 class="modal__tittle">LoveStory</h2>
+      <div class="img-container">
+        <div class="img">
+          <img src="/images/lovestory/1.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/2.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/3.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/4.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/5.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/6.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/7.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/8.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/9.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/10.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/12.jpg" alt="lovestory">
+        </div>
+        <div class="img">
+          <img src="/images/lovestory/13.jpg" alt="lovestory">
+        </div>
+      </div>
+  </div>
+  <div class="pop-up">
+    <button class="pop-up__close-btn" id="close-pop-up-btn">
+      <svg width="25" height="25" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.11 2.697L2.698 4.11 6.586 8l-3.89 3.89 1.415 1.413L8 9.414l3.89 3.89 1.413-1.415L9.414 8l3.89-3.89-1.415-1.413L8 6.586l-3.89-3.89z" fill="#FFFFFF"></path>
+    </svg>
+    </button>
+    <img src="/images/lovestory/1.jpg" alt="lovestory">
+  </div>
+
+  
   <script type="module" src="/src/js/main.js"></script>
+  <script src="/src/js/modalLove.js"></script>
+  <script src="/src/js/modalFamily.js"></script>
+  <script src="/src/js/modalIndividual.js"></script>
 </body>
 
 </html>
