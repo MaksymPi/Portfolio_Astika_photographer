@@ -7,11 +7,11 @@ document.getElementById("love-open-modal-btn").addEventListener("click", functio
 
 // ---------------------------------Close----------------------------------------------
 
-document.getElementById("close-modal-btn").addEventListener("click", function() {
+document.getElementById("love-close-modal-btn").addEventListener("click", function() {
     document.getElementById("love-modal").classList.remove("open");
 });
 
-// ---------------------------------Close Esc----------------------------------------------
+// ------------------Close Esc------------------------------------
 
 window.addEventListener('keydown', (e) => {
     if (e.key ==='Escape') {
@@ -21,15 +21,3 @@ window.addEventListener('keydown', (e) => {
 
 
 
-// ---------------------------------Open img-----------------------------------------
-
-document.querySelectorAll('.img-container img').forEach(img =>{
-    img.onclick = () => {
-        document.querySelector('.pop-up').style.display = 'block';
-        document.querySelector('.pop-up img').src = img.getAttribute('src')
-    }
-});
-
-document.querySelector('.pop-up__close-btn').onclick = () => {
-    document.querySelector('.pop-up').style.display = 'none';
-}
