@@ -25,15 +25,45 @@
     }
 }
 
-@media screen and (max-width: 854px) {
+@media screen and (max-width: 880px) {
+
+        // -----------burger---------
+
+        .burger {
+            display: flex;
+            position: relative;
+            z-index: 50;
+            align-items: center;
+            justify-content: flex-end;
+            width: 35px;
+            height: 25px;
+        
+        }
+
+        
     .header {
         height: 70vh;
     }
+    
 
-    .menu {
+    .menu__items-header .menu {
 
         &__items {
             display: none;
+            position: fixed;
+            flex-direction: column;
+            row-gap: 30px;
+            height: 100%;
+            width: 100%;
+            top: -15px; bottom: 0; left: 0; right: 0;
+            z-index: 50;
+            overflow: auto;
+            padding: 50px 50px;
+            background-color: $bg-color;
+        }
+
+        &__item {
+            row-gap: 30px;
         }
     }
 
@@ -119,6 +149,7 @@
             max-width: 500px;
         }
     }
+
 
 
 }

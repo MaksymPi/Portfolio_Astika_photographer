@@ -1,7 +1,7 @@
 @import 'normalize.css';
 @import 'variables.scss';
 
-@import '__fonts';
+@import 'fonts';
 
 
 @import 'pop-up.scss';
@@ -24,6 +24,8 @@
 @import 'modal__individual.scss';
 
 @import 'modal.scss';
+
+@import 'burger.scss';
 
 @import 'media.scss';
 

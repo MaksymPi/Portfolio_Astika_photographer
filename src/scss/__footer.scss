@@ -2,53 +2,60 @@
       color: $color-primary-opacity;
       font-size: 22px;
       font-weight: 400;
-      text-transform:initial;
+      text-transform: initial;
 }
 
 .footer {
-    padding: 20px 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: $footer-bg-color;
+      padding: 20px 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: $footer-bg-color;
 }
+
 .social {
 
-		&__links {
+      &__links {
             display: flex;
             flex-direction: row;
             justify-content: center;
             gap: 15px;
             margin-bottom: 30px;
 
-		}
+      }
 
-		&__link {
+      &__link {
             width: 36px;
             height: 36px;
-		}
+      }
 }
-.menu {
 
-		&__items {
+.menu__items-footer .menu {
+
+      &__items {
+            display: flex;
+            gap: 0 20px;
+            text-transform: uppercase;
+            font-weight: 600;
             margin-bottom: 30px;
-           
-		}
 
-		&__item {
+      }
+
+      &__item {
             margin-right: 20px;
-		}
+      }
 
-		&__link {
-                  font-size: 26px;
+      &__link {
+            font-size: 26px;
 
-		}
+      }
 }
+
 .info {
 
-		&__developer {
+      &__developer {
             font-size: 16px;
-		}
+      }
 }

@@ -18,6 +18,24 @@ for (let i = 0; i < links.length; i++) {
     })
 }
 
+
+// ---------------------------burger--------------------------
+
+document.querySelector('.burger').addEventListener("click", function() {
+    this.classList.toggle('active');
+        document.querySelector('.menu__items-header .menu__items').classList.toggle('open');
+    }
+);
+
+const menuLinks = document.querySelectorAll('.menu__link');
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.burger').classList.remove('active');
+        document.querySelector('.menu__items-header .menu__items').classList.remove('open');
+    });
+});
+
 // ---------------------------------Modal-Family------------------------------------------
 
 document.getElementById("family-open-modal-btn").addEventListener("click", function() {
