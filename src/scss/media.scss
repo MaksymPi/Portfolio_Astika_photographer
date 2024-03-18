@@ -1,0 +1,164 @@
+@media screen and (max-width:992px) {
+
+    // ---------------header--------------
+    .navbar {
+        font-size: 16px;
+    }
+
+    .tittle {
+
+        &__services {
+            font-size: 16px;
+        }
+
+        &__container {
+            gap: 10px;
+        }
+
+        &__name h2 {
+            font-size: 20px;
+        }
+
+        &__address a {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 854px) {
+    .header {
+        height: 70vh;
+    }
+
+    .menu {
+
+        &__items {
+            display: none;
+        }
+    }
+
+    .main {
+        margin-top: 0px;
+    }
+
+    .section {
+
+        &__header {
+            margin-bottom: 30px;
+        }
+    }
+
+    .box {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    .entry {
+
+        &__container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        &__header {
+            font-size: 32px;
+        }
+
+        &__summary {
+            font-size: 24px;
+            max-width: 600px;
+            color: $color-primary;
+            line-height: 25px;
+        }
+
+        &__img {
+            position: relative;
+            grid-area: 1;
+            padding-top: 20px;
+            max-height: 800px;
+        }
+
+        &__img img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    // -------------Modal---------------
+
+    .modal {
+
+        &__box {
+            max-width: 700px;
+            padding: 25px;
+            margin: 15px 15px;
+
+        }
+
+        &__tittle {
+            text-align: center;
+        }
+
+    }
+
+    .img {
+        width: 250px;
+        height: 200px;
+    }
+
+    // --------pop-up------------
+
+    .pop-up {
+
+        img {
+            max-width: 500px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 592px) {
+
+    // -------------Modal---------------
+    .img {
+        width: 350px;
+        height: 250px;
+    }
+
+    // --------pop-up------------
+
+    .pop-up {
+
+        img {
+            max-width: 300px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 399px) {
+    .entry {
+        &__header {
+            font-size: 24px;
+        }
+
+        &__summary {
+            font-size: 18px;
+            max-width: 700px;
+            line-height: 20px;
+        }
+
+        &__examples {
+            font-size: 24px;
+        }
+    }
+
+    // -------------Modal---------------
+
+}

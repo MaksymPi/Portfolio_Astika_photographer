@@ -1,10 +1,4 @@
-.section {
 
-	&__lovestory {
-	}
-}
-.wrapper {
-}
 .box {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -18,16 +12,18 @@
 	}
 
 	&__header {
-		font-size: 32px;
+		font-size: 36px;
 	}
 
 	&__summary {
+		font-size: 28px;
 		max-width: 450px;
 		color: $color-primary-opacity;
 		line-height: 30px;
 	}
 
 	&__examples {
+		font-size: 28px;
 		font-weight: 600;
 		color: $firstLetter-color;
 		background-color: transparent;
