@@ -19,11 +19,27 @@ for (let i = 0; i < links.length; i++) {
 }
 
 
+let isScrollLocked = false;
+let originalOverflow;
+
+function toggleBodyScrolling() {
+    const body = document.body;
+    if (!isScrollLocked) {
+        originalOverflow = window.getComputedStyle(body).overflow;
+        body.style.overflow = 'hidden';
+    } else {
+        body.style.overflow = originalOverflow;
+    }
+    isScrollLocked = !isScrollLocked;
+}
+
+
+
 // ---------------------------burger--------------------------
 
 document.querySelector('.burger').addEventListener("click", function() {
     this.classList.toggle('active');
-        document.querySelector('.menu__items-header .menu__items').classList.toggle('open');
+        document.querySelector('.menu__items-header .menu__items').classList.toggle('open-burger');
     }
 );
 
@@ -32,7 +48,7 @@ const menuLinks = document.querySelectorAll('.menu__link');
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
         document.querySelector('.burger').classList.remove('active');
-        document.querySelector('.menu__items-header .menu__items').classList.remove('open');
+        document.querySelector('.menu__items-header .menu__items').classList.remove('open-burger');
     });
 });
 
@@ -40,6 +56,7 @@ menuLinks.forEach(link => {
 
 document.getElementById("family-open-modal-btn").addEventListener("click", function() {
     document.getElementById("family-modal").classList.add("open");
+    toggleBodyScrolling()
 });
 
 
@@ -47,21 +64,35 @@ document.getElementById("family-open-modal-btn").addEventListener("click", funct
 
 document.getElementById("family-close-modal-btn").addEventListener("click", function() {
     document.getElementById("family-modal").classList.remove("open");
+    originalOverflow = window.getComputedStyle(body).overflow;
+        body.style.overflow = 'auto';
 });
 
 // -------------------------Close Esc----------------------------------------------
 
-window.addEventListener('keydown', (e) => {
-    if (e.key ==='Escape') {
-        document.getElementById("family-modal").classList.remove("open");
-    }
-})
+let popUpClosed = false;
 
+
+window.addEventListener("keydown", e => {
+    if (e.key === "Escape") {
+        if (!popUpClosed) {
+            document.querySelector(".pop-up").style.display = "none";
+            popUpClosed = true;
+        } else {
+            document.getElementById("love-modal").classList.remove("open");
+            document.getElementById("family-modal").classList.remove("open");
+            document.getElementById("individual-modal").classList.remove("open");
+            popUpClosed = false; 
+            toggleBodyScrolling()
+        }
+    }
+});
 
 // ---------------------------------Modal-Individual------------------------------------------
 
 document.getElementById("individual-open-modal-btn").addEventListener("click", function() {
     document.getElementById("individual-modal").classList.add("open");
+    toggleBodyScrolling()
 });
 
 
@@ -69,20 +100,14 @@ document.getElementById("individual-open-modal-btn").addEventListener("click", f
 
 document.getElementById("individual-close-modal-btn").addEventListener("click", function() {
     document.getElementById("individual-modal").classList.remove("open");
+    toggleBodyScrolling()
 });
-
-// ---------------------------------Close Esc----------------------------------------------
-
-window.addEventListener('keydown', (e) => {
-    if (e.key ==='Escape') {
-        document.getElementById("individual-modal").classList.remove("open");
-    }
-})
 
 // ---------------------------------Modal-love------------------------------------------
 
 document.getElementById("love-open-modal-btn").addEventListener("click", function() {
     document.getElementById("love-modal").classList.add("open");
+    toggleBodyScrolling()
 });
 
 
@@ -90,15 +115,8 @@ document.getElementById("love-open-modal-btn").addEventListener("click", functio
 
 document.getElementById("love-close-modal-btn").addEventListener("click", function() {
     document.getElementById("love-modal").classList.remove("open");
+    toggleBodyScrolling()
 });
-
-// ------------------Close Esc------------------------------------
-
-window.addEventListener('keydown', (e) => {
-    if (e.key ==='Escape') {
-        document.getElementById("love-modal").classList.remove("open");
-    }
-})
 
 // -------------------Open img----------------------------
 
